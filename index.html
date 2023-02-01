@@ -67,6 +67,9 @@
 
   
   
+    
+    <script src="/js/mathjax-config.js"></script>
+  
 
   
 
@@ -86,106 +89,110 @@
     
       
       
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
       
       
         
       
+    
+    
+    
 
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -212,7 +219,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.0f229d4b7ebad1917a9a357cba2effab.css" />
+  <link rel="stylesheet" href="/css/wowchemy.b28fede728ae35c95b696fdbda250f4f.css" />
 
   
   
@@ -239,6 +246,42 @@
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4WC2LD1GHF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-4WC2LD1GHF', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
 
 
 
@@ -246,6 +289,19 @@
 
 
 
+
+
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b01ddd1a84f60f2d2becf50113f7eb81";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -268,7 +324,7 @@
 
 
 
-  <meta name="author" content="Alice Wu 吳恩達" />
+  <meta name="author" content="Ruiyang Sun" />
 
 
 
@@ -276,7 +332,7 @@
 
   
 
-<meta name="description" content="A highly-customizable Hugo academic resume theme powered by Wowchemy website builder." />
+<meta name="description" content="The homepage of Ruiyang Sun" />
 
 
 
@@ -292,7 +348,7 @@
 <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
 <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-<meta name="theme-color" content="#1565c0" />
+<meta name="theme-color" content="#3f51b5" />
 
 
 
@@ -313,16 +369,14 @@
 
 <meta property="twitter:card" content="summary" />
 
-  <meta property="twitter:site" content="@wowchemy" />
-  <meta property="twitter:creator" content="@wowchemy" />
+  <meta property="twitter:site" content="@rockmagma02" />
+  <meta property="twitter:creator" content="@rockmagma02" />
 <meta property="twitter:image" content="https://www.ruiyangsun.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
-<meta property="og:site_name" content="Academic" />
+<meta property="og:site_name" content="Ruiyang Sun" />
 <meta property="og:url" content="https://www.ruiyangsun.com/" />
-<meta property="og:title" content="Academic" />
-<meta property="og:description" content="A highly-customizable Hugo academic resume theme powered by Wowchemy website builder." /><meta property="og:image" content="https://www.ruiyangsun.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:title" content="Ruiyang Sun" />
+<meta property="og:description" content="The homepage of Ruiyang Sun" /><meta property="og:image" content="https://www.ruiyangsun.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
-  
-    <meta property="og:updated_time" content="2022-10-24T00:00:00&#43;00:00" />
   
 
 
@@ -356,14 +410,14 @@
 
   
   
-    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Academic" />
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Ruiyang Sun" />
   
 
   
 
 
   
-  <title>Academic</title>
+  <title>Ruiyang Sun</title>
 
   
   
@@ -383,7 +437,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   " data-wc-page-id="3976528693a0108357f4928017600865" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   "  >
 
   
   
@@ -462,7 +516,7 @@
 
       
       <div class="d-none d-lg-inline-flex">
-        <a class="navbar-brand" href="/">Academic</a>
+        <a class="navbar-brand" href="/">Ruiyang Sun</a>
       </div>
       
 
@@ -475,7 +529,7 @@
 
       
       <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-        <a class="navbar-brand" href="/">Academic</a>
+        <a class="navbar-brand" href="/">Ruiyang Sun</a>
       </div>
       
 
@@ -524,6 +578,117 @@
           
           
 
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#papers" data-target="#papers"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects" data-target="#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#experience" data-target="#experience"><span>Experience</span></a>
+          </li>
+
+          
+          
+
         
 
           
@@ -537,7 +702,7 @@
           
             
             <li class="nav-item d-none d-lg-inline-flex">
-              <a class="nav-link" href="https://twitter.com/GeorgeCushen" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+              <a class="nav-link" href="https://twitter.com/rockmagma02" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
                 <i class="fab fa-twitter" aria-hidden="true"></i>
               </a>
             </li>
@@ -604,184 +769,20 @@
 
 
   
+  
 
 <span class="js-widget-page d-none"></span>
 
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section id="section-hero" class="home-section wg-hero dark "  >
- <div class="home-section-bg " style="background-image: linear-gradient(90deg, #004ba0, #1976d2);">
-   
- </div>
-  <div class="container">
-
-  
-
-    
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-md-6 text-center text-md-left">
-
-
-    
-      <h1 class="hero-title">Hugo Academic Theme</h1>
-    
-
-    
-      <div class="hero-lead"><p><strong>Generated by Wowchemy - the FREE, Hugo-based open source website builder trusted by 500,000+ sites.</strong></p>
-<p><strong>Easily build anything with blocks - no-code required!</strong></p>
-<p>From landing pages, second brains, and courses to academic resumés, conferences, and tech blogs.</p>
-<!--Custom spacing-->
-<div class="mb-3"></div>
-<!--GitHub Button JS-->
-<script async defer src="https://buttons.github.io/buttons.js"></script></div>
-    
-
-    
-    
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-    <p class="cta-btns">
-      <a href="https://wowchemy.com/templates/" target="_blank" rel="noopener" class="btn btn-light btn-lg mb-md-1"><strong>Get Started</strong></a>
-
-      
-      
-        
-        
-        
-        
-          
-        
-      <a href="https://discord.gg/z8wNYzb" target="_blank" rel="noopener" class="hero-cta-alt btn-lg pl-md-4">Ask a question <i class="fas fa-angle-right"></i></a>
-      
-    </p>
-    
-
-    
-    
-    <p class="hero-note text-muted mb-3 mb-md-1">
-      <div style="text-shadow: none;"><a class="github-button" href="https://github.com/wowchemy/wowchemy-hugo-themes" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star">Star Wowchemy Website Builder</a></div><div style="text-shadow: none;"><a class="github-button" href="https://github.com/wowchemy/starter-hugo-academic" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star">Star the Academic template</a></div>
-    </p>
-    
-
   
   
-  </div>
-  <div class="col-12 mx-auto col-md-6  hero-media">
-      
-      
-        
-        
-        
-        
-
-        
-          
-          
-            
-          
-          
-        
-          
-          
-          
-        
-          
-          
-          
-        
-        
-
-        <img src="/media/hero-academic_huc70d93133c25ab28042d15d1ecec0cb0_7012_400x0_resize_lanczos_3.png" srcset="/media/hero-academic_huc70d93133c25ab28042d15d1ecec0cb0_7012_1200x0_resize_lanczos_3.png 1200w,/media/hero-academic_huc70d93133c25ab28042d15d1ecec0cb0_7012_800x0_resize_lanczos_3.png 800w,/media/hero-academic_huc70d93133c25ab28042d15d1ecec0cb0_7012_400x0_resize_lanczos_3.png 400w" width="359" height="400" alt="">
-      
-    
-  </div>
-</div>
 
 
-
-  
-
-  </div>
-</section>
 
 
   
@@ -842,7 +843,12 @@
 
 
 
-<section id="about" class="home-section wg-about-avatar  "  >
+
+
+
+
+
+<section id="biography" class="home-section wg-about  "  >
  <div class="home-section-bg " >
    
  </div>
@@ -870,153 +876,177 @@
 
 
 
-<div id="profile">
 
-  
-  <div class="avatar-wrapper">
-    
-    <img class="avatar avatar-circle" src="/authors/admin/avatar_hu3c64bd0f98018e2d901b7c60447ac42e_1387900_150x150_fill_q75_lanczos_center.jpg" alt="Alice Wu 吳恩達"
-         width="150" height="150">
-    <span class="avatar-emoji">☕️</span>
-  </div>
-  
+<div class="row">
+  <div class="col-12 col-lg-4">
+    <div id="profile">
 
-  <div class="portrait-title">
+      
+      
+      <img class="avatar avatar-circle"
+           width="270" height="270"
+           src="/authors/admin/avatar_hu3c64bd0f98018e2d901b7c60447ac42e_1387900_270x270_fill_q75_lanczos_center.jpg" alt="Ruiyang Sun">
+      
 
-    <h2>Alice Wu 吳恩達</h2>
+      <div class="portrait-title">
 
-    <h3>Professor of Artificial Intelligence</h3>
+        <h2>Ruiyang Sun</h2>
 
-    
-    <h3>
-      <a href="https://www.stanford.edu/" target="_blank" rel="noopener">
-      <span>Stanford University</span>
-      </a>
-    </h3>
-    
-  </div>
+        <h3>Student in artificial intelligence</h3>
 
-  <ul class="network-icon" aria-hidden="true">
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-      
-    
-    <li>
-      <a href="/#contact"  aria-label="envelope"
-         >
-        <i class="fas fa-envelope big-icon"></i>
-      </a>
-    </li>
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener" aria-label="twitter"
-          data-toggle="tooltip" data-placement="top" title="Follow me on Twitter">
-        <i class="fab fa-twitter big-icon"></i>
-      </a>
-    </li>
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener" aria-label="graduation-cap"
-         >
-        <i class="fas fa-graduation-cap big-icon"></i>
-      </a>
-    </li>
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://github.com/gcushen" target="_blank" rel="noopener" aria-label="github"
-         >
-        <i class="fab fa-github big-icon"></i>
-      </a>
-    </li>
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="linkedin"
-         >
-        <i class="fab fa-linkedin big-icon"></i>
-      </a>
-    </li>
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-    
-    <li>
-      <a href="/uploads/resume.pdf" target="_blank" rel="noopener" aria-label="cv"
-         >
-        <i class="ai ai-cv big-icon"></i>
-      </a>
-    </li>
-    
-  </ul>
+        
+        <h3>
+          <a href="https://www.pku.edu.cn/" target="_blank" rel="noopener">
+          <span>Peking University</span>
+          </a>
+        </h3>
+        
+      </div>
 
-  
-  <div class="article-style pt-2 d-flex justify-content-center">
-    <div class="bio-text">
-      <p style="text-align: justify;">Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="/#contact"  aria-label="envelope">
+            <i class="fas fa-envelope big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://twitter.com/rockmagma02" target="_blank" rel="noopener" aria-label="twitter">
+            <i class="fab fa-twitter big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="/......"  aria-label="graduation-cap">
+            <i class="fas fa-graduation-cap big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://github.com/rockmagma02" target="_blank" rel="noopener" aria-label="github">
+            <i class="fab fa-github big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="/uploads/resume.pdf"  aria-label="cv">
+            <i class="ai ai-cv big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
 
     </div>
   </div>
-  
+  <div class="col-12 col-lg-8">
 
+    
+    <h1>Biography</h1>
+
+    <div class="article-style">
+      <p>I am Ruiyang Sun (孙睿阳), a junior student at Peking University (PKU), where I am pursuing a dual degree in GeoPhysics and Artificial Intelligence. I am honored to be mentored by Professor Yaodong Yang and affiliated with the PKU Institute for AI.</p>
+<p style="text-align: justify;">My research focuses on the area of Reinforcement Learning, particularly Safe Reinforcement Learning. I am committed to advancing the field and ensuring that intelligent agents are safe and trustworthy. I believe that my research has the potential to make a significant impact in the field and I am excited to continue exploring and contributing to this area.</p>
+
+    </div>
+
+    <div class="row">
+
+      
+      <div class="col-md-5">
+        <div class="section-subheading">Interests</div>
+        <ul class="ul-interests mb-0">
+          
+          <li>Reinforcement Learning</li>
+          
+          <li>Machine Learning</li>
+          
+          <li>Safe Reinforcement Learning</li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="col-md-7">
+        <div class="section-subheading">Education</div>
+        <ul class="ul-edu fa-ul mb-0">
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">Double Degree in Artificial Intelligence, 2021</p>
+              <p class="institution">Peking University</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">Majoring in Geophysics, 2020</p>
+              <p class="institution">Peking University</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+    </div>
+  </div>
 </div>
 
 
@@ -1068,37 +1098,6 @@
 
 
   
-  
-  
-
-  
-  
-    
-  
-  
-    
-  
-
-  
-
-  
-  <p class="powered-by copyright-license-text">
-    © 2023 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
-  </p>
-  
-
-  <p class="powered-by footer-license-icons">
-    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
-      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
-      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
-      
-        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
-      
-      
-        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
-      
-    </a>
-  </p>
 
 
 
