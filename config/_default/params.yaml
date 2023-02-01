@@ -6,7 +6,7 @@
 # Appearance
 
 appearance:
-  theme_day: minimal
+  theme_day: ocean
   theme_night: minimal
   font: minimal
   font_size: L
@@ -18,11 +18,11 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
-    twitter: 'wowchemy'
+    description: 'The homepage of Ruiyang Sun'
+    twitter: 'rockmagma02'
   analytics:
-    google_analytics: ''
-    baidu_tongji: ''
+    google_analytics: 'G-4WC2LD1GHF'
+    baidu_tongji: 'b01ddd1a84f60f2d2becf50113f7eb81'
   verification:
     google: ''
     baidu: ''
@@ -31,24 +31,39 @@ marketing:
 
 header:
   navbar:
+    # Choose a navigation block
+    block: navbar
+    # Display the navigation bar?
     enable: true
+    # Align menu links: left (l), center (c), or right (r)
     align: l
+    # Display your site title or `assets/media/logo*` image in the nav bar?
     show_logo: true
-    show_language: false
+    # Show a language chooser (if you have translated your site content)?
+    show_translations: true
+    # If `show_translations` is enabled, do you wish to display the current language name?
+    show_language: true
+    # Let the user override the default light/dark mode of your theme?
     show_day_night: true
+    # Let the user search from the nav bar?
     show_search: true
+    # Attempt to automatically highlight the active menu link? Can be disabled for complex sites.
     highlight_active_link: true
+
 
 # Site footer
 
-footer:
-  copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
-    license:
-      enable: true
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+# footer:
+#   block: minimal
+#   copyright:
+#     notice: '© {year} Me. This work is licensed under {license}'
+#     license:
+#       enable: true
+#       allow_derivatives: false
+#       share_alike: true
+#       allow_commercial: false
+#   # For multilingual sites, show a language chooser in the footer?
+#   show_translations: true
 
 # Localization
 
@@ -64,28 +79,28 @@ features:
     theme_light: github-light
     theme_dark: dracula
   math:
-    enable: false
+    enable: true
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/rockmagma02/rockmagma.github.io'
     content_dir: content
     branch: main
   avatar:
     gravatar: false
     shape: circle
-  comment:
-    provider: ''
-    disqus:
-      shortname: ''
-      show_count: true
-    commento:
-      url: ''
-    giscus:
-      repo: ''
-      repo_id: ''
-      category: ''
-      category_id: ''
+  # comment:
+  #   provider: ''
+  #   disqus:
+  #     shortname: ''
+  #     show_count: true
+  #   commento:
+  #     url: ''
+  #   giscus:
+  #     repo: ''
+  #     repo_id: ''
+  #     category: ''
+  #     category_id: ''
   search:
     provider: wowchemy
     algolia:
