@@ -78,7 +78,7 @@ email: 'sun_ruiyang@stu.pku.edu.cn'
 highlight_name: true
 ---
 
-I am Ruiyang Sun (孙睿阳), a junior student at Peking University (PKU), where I am pursuing a dual degree in GeoPhysics and Artificial Intelligence. I am honored to be mentored by Professor Yaodong Yang and affiliated with the PKU Institute for AI.
+I am Ruiyang Sun (孙睿阳), a junior student at Peking University (PKU), where I am pursuing a dual degree in GeoPhysics and **Artificial Intelligence**. I am honored to be mentored by Professor [Yaodong Yang](https://www.yangyaodong.com/) and affiliated with the PKU Institute for AI.
 
-My research focuses on the area of Reinforcement Learning, particularly Safe Reinforcement Learning. I am committed to advancing the field and ensuring that intelligent agents are safe and trustworthy. I believe that my research has the potential to make a significant impact in the field and I am excited to continue exploring and contributing to this area.
+My research focuses on the area of **Reinforcement Learning**, particularly **Safe Reinforcement Learning**. I am committed to advancing the field and ensuring that intelligent agents are safe and trustworthy. I believe that my research has the potential to make a significant impact in the field and I am excited to continue exploring and contributing to this area.
 {style="text-align: justify;"}
