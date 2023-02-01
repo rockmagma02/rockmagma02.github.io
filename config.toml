@@ -1,0 +1,3 @@
+baseURL = 'http://www.ruiyangsun.com/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'

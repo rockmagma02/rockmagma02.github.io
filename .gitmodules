@@ -1,0 +1,3 @@
+[submodule "themes/wowchemy-hugo-themes"]
+	path = themes/wowchemy-hugo-themes
+	url = git@github.com:rockmagma02/wowchemy-hugo-themes.git
