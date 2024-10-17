@@ -56,7 +56,7 @@ const Intro = () => {
   return (
     <HeaderContainer>
       <LeftColumn>
-        <Avatar src="avatar.jpg" alt="Your Photo" />
+        <Avatar src="avatar.png" alt="Avatar" />
         <Contact />
       </LeftColumn>
       <RightColumn>
