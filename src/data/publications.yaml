@@ -1,0 +1,80 @@
+publications:
+  - title: "Safe RLHF: Safe Reinforcement Learning from Human Feedback"
+    authors: "Josef Dai*, Xuehai Pan*, Ruiyang Sun*, Jiaming Ji*, Xinbo Xu, Mickel Liu, Yizhou Wang, Yaodong Yang"
+    year: 2023
+    link: "https://arxiv.org/abs/2310.12773"
+    image: "safe-rlhf.png"
+    journal: "The Twelfth International Conference on Learning Representations (ICLR 2024)"
+    comment: "Spotlight Presentation; Github 1.1k+ stars"
+    optional:
+      PDF: "https://arxiv.org/pdf/2310.12773"
+      Code: "https://github.com/PKU-Alignment/safe-rlhf"
+      Slides: "https://iclr.cc/media/iclr-2024/Slides/18540.pdf"
+      Dataset: "https://huggingface.co/collections/PKU-Alignment/pku-saferlhf-666998c71f7146568768452c"
+      Model: "https://huggingface.co/PKU-Alignment/beaver-7b-v3.0"
+      OpenReview: "https://openreview.net/forum?id=TyFrPOKYXw"
+      HuggingFace: "https://huggingface.co/papers/2310.12773"
+    abstract: "With the development of large language models (LLMs), striking a balance between the performance and safety of AI systems has never been more critical. However, the inherent tension between the objectives of helpfulness and harmlessness presents a significant challenge during LLM training. To address this issue, we propose Safe Reinforcement Learning from Human Feedback (Safe RLHF), a novel algorithm for human value alignment. Safe RLHF explicitly decouples human preferences regarding helpfulness and harmlessness, effectively avoiding the crowdworkers' confusion about the tension and allowing us to train separate reward and cost models. We formalize the safety concern of LLMs as an optimization task of maximizing the reward function while satisfying specified cost constraints. Leveraging the Lagrangian method to solve this constrained problem, Safe RLHF dynamically adjusts the balance between the two objectives during fine-tuning. Through a three-round fine-tuning using Safe RLHF, we demonstrate a superior ability to mitigate harmful responses while enhancing model performance compared to existing value-aligned algorithms. Experimentally, we fine-tuned the Alpaca-7B using Safe RLHF and aligned it with collected human preferences, significantly improving its helpfulness and harmlessness according to human evaluations."
+    bibtex: |
+      @inproceedings{Dai.2023,
+        abstract  = {{With the development of large language models (LLMs), striking a balance between the performance and safety of AI systems has never been more critical. However, the inherent tension between the objectives of helpfulness and harmlessness presents a significant challenge during LLM training. To address this issue, we propose Safe Reinforcement Learning from Human Feedback (Safe RLHF), a novel algorithm for human value alignment. Safe RLHF explicitly decouples human preferences regarding helpfulness and harmlessness, effectively avoiding the crowdworkers' confusion about the tension and allowing us to train separate reward and cost models. We formalize the safety concern of LLMs as an optimization task of maximizing the reward function while satisfying specified cost constraints. Leveraging the Lagrangian method to solve this constrained problem, Safe RLHF dynamically adjusts the balance between the two objectives during fine-tuning. Through a three-round fine-tuning using Safe RLHF, we demonstrate a superior ability to mitigate harmful responses while enhancing model performance compared to existing value-aligned algorithms. Experimentally, we fine-tuned the Alpaca-7B using Safe RLHF and aligned it with collected human preferences, significantly improving its helpfulness and harmlessness according to human evaluations.}},
+        author    = {Dai*, Josef and Pan*, Xuehai and Sun*, Ruiyang and Ji*, Jiaming and Xu, Xinbo and Liu, Mickel and Wang, Yizhou and Yang\textsuperscript{\textdagger}, Yaodong},
+        booktitle = {The Twelfth International Conference on Learning Representations},
+        doi       = {10.48550/arxiv.2310.12773},
+        series    = {ICLR 2024 Spotlight},
+        title     = {{Safe RLHF: Safe Reinforcement Learning from Human Feedback}},
+        url       = {https://arxiv.org/abs/2310.12773},
+        year      = {2023}
+      }
+
+  - title: "BEAVERTAILS: towards improved safety alignment of llm via a human-preference dataset"
+    authors: "Jiaming Ji, Mickel Liu, Juntao Dai, Xuehai Pan, Chi Zhang, Ce Bian, Boyuan Chen, Ruiyang Sun, Yizhou Wang, Yaodong Yang"
+    year: 2023
+    link: "https://proceedings.neurips.cc/paper_files/paper/2023/hash/4dbb61cb68671edc4ca3712d70083b9f-Abstract-Datasets_and_Benchmarks.html"
+    image: "beavertails.png"
+    journal: "Proceedings of the 37th International Conference on Neural Information Processing Systems (NeurIPS 2023)"
+    optional:
+      PDF: "https://arxiv.org/pdf/2307.04657"
+      Code: "https://github.com/PKU-Alignment/beavertails"
+      Website: "https://sites.google.com/view/pku-beavertails"
+      Dataset: "https://huggingface.co/datasets/PKU-Alignment/BeaverTails"
+      OpenReview: "https://openreview.net/forum?id=g0QovXbFw3&noteId=RdXr7v5sCl"
+      HuggingFace: "https://huggingface.co/papers/2307.04657"
+      Supplemental: "https://proceedings.neurips.cc/paper_files/paper/2023/file/4dbb61cb68671edc4ca3712d70083b9f-Supplemental-Datasets_and_Benchmarks.zip"
+    abstract: "In this paper, we introduce the BEAVERTAILS dataset, aimed at fostering research on safety alignment in large language models (LLMs). This dataset uniquely separates annotations of helpfulness and harmlessness for question-answering pairs, thus offering distinct perspectives on these crucial attributes. In total, we have gathered safety meta-labels for 333,963 question-answer (QA) pairs and 361,903 pairs of expert comparison data for both the helpfulness and harmlessness metrics. We further showcase applications of BeaverTails in content moderation and reinforcement learning with human feedback (RLHF), emphasizing its potential for practical safety measures in LLMs. We believe this dataset provides vital resources for the community, contributing towards the safe development and deployment of LLMs. Our project page is available at the following URL: https://sites.google.com/view/pku-beavertails."
+    bibtex: |
+      @inproceedings{Ji..2023,
+        abstract  = {{In this paper, we introduce the BEAVERTAILS dataset, aimed at fostering research on safety alignment in large language models (LLMs). This dataset uniquely separates annotations of helpfulness and harmlessness for question-answering pairs, thus offering distinct perspectives on these crucial attributes. In total, we have gathered safety meta-labels for 333,963 question-answer (QA) pairs and 361,903 pairs of expert comparison data for both the helpfulness and harmlessness metrics. We further showcase applications of BeaverTails in content moderation and reinforcement learning with human feedback (RLHF), emphasizing its potential for practical safety measures in LLMs. We believe this dataset provides vital resources for the community, contributing towards the safe development and deployment of LLMs. Our project page is available at the following URL: https://sites.google.com/view/pku-beavertails.}},
+        address   = {Red Hook, NY, USA},
+        author    = {Ji, Jiaming and Liu, Mickel and Dai, Juntao and Pan, Xuehai and Zhang, Chi and Bian, Ce and Chen, Boyuan and Sun, Ruiyang and Wang, Yizhou and Yang, Yaodong},
+        booktitle = {Proceedings of the 37th International Conference on Neural Information Processing Systems},
+        doi       = {10.48550/arxiv.2307.04657},
+        publisher = {Curran Associates Inc.},
+        series    = {NIPS 2023},
+        title     = {{BEAVERTAILS: towards improved safety alignment of llm via a human-preference dataset}},
+        year      = {2023},
+      }
+
+  - title: "OmniSafe: An Infrastructure for Accelerating Safe Reinforcement Learning Research"
+    authors: "Jiaming Ji, Jiayi Zhou, Borong Zhang, Juntao Dai, Xuehai Pan, Ruiyang Sun, Weidong Huang, Yiran Geng, Mickel Liu, Yaodong Yang"
+    year: 2023
+    link: https://jmlr.org/papers/v25/23-0681.html
+    image: "omnisafe.png"
+    journal: "Journal of Machine Learning Research"
+    comment: "Github 900+ stars"
+    optional:
+      PDF: "https://jmlr.org/papers/volume25/23-0681/23-0681.pdf"
+      Code: "https://github.com/PKU-Alignment/omnisafe"
+      Website: "https://www.omnisafe.ai/en/latest/"
+    abstract: "AI systems empowered by reinforcement learning (RL) algorithms harbor the immense potential to catalyze societal advancement, yet their deployment is often impeded by significant safety concerns. Particularly in safety-critical applications, researchers have raised concerns about unintended harms or unsafe behaviors of unaligned RL agents. The philosophy of safe reinforcement learning (SafeRL) is to align RL agents with harmless intentions and safe behavioral patterns. In SafeRL, agents learn to develop optimal policies by receiving feedback from the environment, while also fulfilling the requirement of minimizing the risk of unintended harm or unsafe behavior. However, due to the intricate nature of SafeRL algorithm implementation, combining methodologies across various domains presents a formidable challenge. This had led to an absence of a cohesive and efficacious learning framework within the contemporary SafeRL research milieu. In this work, we introduce a foundational framework designed to expedite SafeRL research endeavors. Our comprehensive framework encompasses an array of algorithms spanning different RL domains and places heavy emphasis on safety elements. Our efforts are to make the SafeRL-related research process more streamlined and efficient, therefore facilitating further research in AI safety. Our project is released at: https://github.com/PKU-Alignment/omnisafe."
+    bibtex: |
+      @article{Ji.2024tsi,
+        author  = {Ji, Jiaming and Zhou, Jiayi and Zhang, Borong and Dai, Juntao and Pan, Xuehai and Sun, Ruiyang and Huang, Weidong and Geng, Yiran and Liu, Mickel and Yang, Yaodong},
+        journal = {Journal of Machine Learning Research},
+        number  = {285},
+        pages   = {1--6},
+        title   = {{OmniSafe: An Infrastructure for Accelerating Safe Reinforcement Learning Research}},
+        url     = {http://jmlr.org/papers/v25/23-0681.html},
+        volume  = {25},
+        year    = {2024}
+      }

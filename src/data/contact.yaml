@@ -1,0 +1,25 @@
+email:
+  - link: "mailto:ruiyangsun02@gmail.com"
+    text: "ruiyangsun02@gmail.com"
+
+facetime:
+  - link: "tel:+8618609715159"
+    text: "+86 18609715159"
+
+work:
+  - link: "https://github.com/rockmagma02"
+    label: "GitHub"
+  - link: "https://x.com/RuiyangSun02"
+    label: "X (formerly Twitter)"
+  - link: "https://scholar.google.com/citations?user=EE_w5nAAAAAJ&hl=en"
+    label: "Google Scholar"
+  - link: "https://www.linkedin.com/in/ruiyang-sun-05a450264/"
+    label: "LinkedIn"
+
+personal:
+  - link: "https://www.instagram.com/ruiyang.sun.02/"
+    label: "Instagram"
+  - link: "https://www.facebook.com/ruiyang.sun.02"
+    label: "Facebook"
+  - link: "https://www.threads.net/@ruiyang.sun.02"
+    label: "Threads"
